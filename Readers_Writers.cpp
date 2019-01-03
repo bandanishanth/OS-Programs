@@ -1,7 +1,11 @@
+/*
+Author:Nishanth Banda
+Objective:A Program that attempts to only simulate the famous Reader's Writers problem in Operating Systems.
+*/
 #include<iostream>
 #include<cstdlib>
 //STDLIB to use the exit() function.....
-# define BUFFER_SIZE 5 //MACRO....
+# define BUFFER_SIZE 5 //Consider a Buffer of width 5.
 using namespace std;
 class buffer
 {
@@ -11,7 +15,7 @@ class buffer
 public:
  buffer()//Default constructor to initialize count to -1..
  {
-  count=-1;//Initially count is -1 , when first prodecer executes , count become 0 and a[0] is given value...n
+  count=-1;//Initially count is -1 , when first producer executes , count becomes 0 and a[0] is given value...n
  }
 
  void produce(int n)//N is to inserted into buffer....
